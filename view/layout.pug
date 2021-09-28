@@ -1,0 +1,46 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(href="https://bootswatch.com/5/morph/bootstrap.min.css", rel="stylesheet")
+        title= titulo
+        style 
+            include ./css/style.css 
+    body 
+        header 
+            nav.navbar.navbar-expand-md.navbar-light.bg-light
+                div.container-fluid
+                    a(href="/").navbar-brand Santiago
+                    div.collapse.navbar-collapse#navbarColor01
+                        ul.navbar-nav.me-auto
+                            li(style={'margin-left': '20px'}).nav-item
+                                a(href="/").nav-link.active Inicio
+                                    span.visually-hidden
+                            li(style={'margin-left': '20px'}).nav-item
+                                a(href="/habilidadesBlandas").nav-link Habilidades blandas
+                                    span.visually-hidden
+                            li(style={'margin-left': '20px'}).nav-item
+                                a(href="/habilidadesProfecionales").nav-link hablidades Profesionales
+                                    span.visually-hidden
+                            li(style={'margin-left': '20px'}).nav-item
+                                a(href="/experienciaLaboral").nav-link Experiencia Laboral
+                                    span.visually-hidden
+                            li(style={'margin-left': '20px'}).nav-item
+                                a(href="/estudios").nav-link Estudios
+                                    span.visually-hidden
+                            //- li(style={'margin-right': '40px'}).nav-item
+                    a(href="/form")
+                        button.btn.btn-primary Formulario
+                            
+        
+        main(style={height: '120vh','padding-Top': '50px'}).container 
+                block main 
+        
+        footer(style={background: '#17202A', width: '100%',height: '150px','padding-top': '25px'})
+            div.container
+                div.row
+                    p.col-md-3.parraf Correo xxxxx@gmail.com
+                    p.col-md-3.parraf Facebook twitter Instagram
+                    p.col-md-3.parraf Telefono: 312-456-7890
